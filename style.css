@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url(c:\Users\maggi\OneDrive\文件\03nft-preview-card-component-main\normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  font-size: 18px;
+  background-color: #0d192b;
+  max-width: 1440px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "." "card" "footer";
+  -ms-grid-rows: 1fr auto 1fr;
+      grid-template-rows: 1fr auto 1fr;
+  color: #8bacda;
+  font-family: 'Outfit', sans-serif;
+}
+
+body main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card;
+  place-self: center;
+}
+
+body main .card {
+  width: 350px;
+  background-color: #14253d;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+body main .card .image {
+  width: 85%;
+  overflow: hidden;
+  text-align: center;
+  margin: 1.5rem auto 0;
+  position: relative;
+  border-radius: 10px;
+}
+
+body main .card .image #img {
+  display: block;
+  width: 100%;
+}
+
+body main .card .image #view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: rgba(0, 255, 247, 0.527);
+}
+
+body main .card .image #view img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body main .card .image:hover {
+  cursor: pointer;
+}
+
+body main .card .image:hover #view {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main .card .content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+body main .card .content h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+body main .card .content h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+body main .card .content p {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+body main .card .info {
+  width: 85%;
+  margin: 0 auto 0.5rem;
+  vertical-align: middle;
+}
+
+body main .card .info img {
+  height: 1rem;
+  margin-right: 2px;
+}
+
+body main .card .info .info_left {
+  float: left;
+  color: cyan;
+  font-weight: 600;
+}
+
+body main .card .info .info_right {
+  float: right;
+}
+
+body main .card .info::after {
+  content: "";
+  clear: both;
+}
+
+body main .card hr {
+  width: 85%;
+  border-top: 0.5px solid #8bacda;
+  opacity: 20%;
+  margin: 0.5rem auto;
+}
+
+body main .card .creator {
+  width: 85%;
+  margin: 0.5rem auto 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr;
+      grid-template-columns: 1fr 8fr;
+      grid-template-areas: 'icon name';
+}
+
+body main .card .creator .icon {
+  width: 2rem;
+  height: 2rem;
+  border: white solid 1px;
+  border-radius: 50%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icon;
+}
+
+body main .card .creator .icon img {
+  width: 100%;
+  display: block;
+}
+
+body main .card .creator p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  margin: 0 5%;
+  font-weight: 300;
+}
+
+body main .card .creator p span {
+  color: white;
+}
+
+body main .card .creator p span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+body footer {
+  margin: 0 auto 0.5rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+body footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body footer .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 375px) {
+  body main > .card {
+    width: 85%;
+    min-width: 285px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -65,6 +65,22 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
+1. hover change color:
+https://stackoverflow.com/questions/10769016/display-image-on-text-link-hover-css-only
+
+2. try to set transition duration to the visibility/ z-index changes
+    transition-duration: 5s;
+    https://stackoverflow.com/questions/21375518/transition-css-duration-not-working
+
+3. add in the border (horizontal line) without using border of div
+https://www.w3schools.com/howto/howto_css_style_hr.asp
+
+4. How to add opacity to border instead of adding hr
+https://stackoverflow.com/questions/4062001/can-you-set-a-border-opacity-in-css
+
+5. How come there are margins on top and bottom of h1/ p?
+https://stackoverflow.com/questions/20689575/css-margin-top-of-h1-affects-parents-margin
+
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
