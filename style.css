@@ -30,6 +30,8 @@ body main .card {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
+  -webkit-box-shadow: 0 20px 5px 20px #0b1423;
+          box-shadow: 0 20px 5px 20px #0b1423;
 }
 
 body main .card .image {
@@ -126,7 +128,7 @@ body main .card .info::after {
 
 body main .card hr {
   width: 85%;
-  border-top: 0.5px solid #8bacda;
+  border-top: 0.5px solid #2f415b;
   opacity: 20%;
   margin: 0.5rem auto;
 }
